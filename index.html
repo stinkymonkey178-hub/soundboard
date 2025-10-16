@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound + Video Funboard</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .soundboard {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+    iframe:hover {
+      transform: scale(1.05);
+    }
+    .video-container {
+      max-width: 560px;
+      width: 100%;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 315px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sound + Video Funboard</h1>
+  <div class="soundboard">
+    <iframe width="110" height="200" src="https://www.myinstants.com/instant/i-like-my-cheese-drippy-bruh-2-41903/embed/" frameborder="0" scrolling="no"></iframe>
+    <iframe width="110" height="200" src="https://www.myinstants.com/instant/metal-pipe-clang-80894/embed/" frameborder="0" scrolling="no"></iframe>
+    <iframe width="110" height="200" src="https://www.myinstants.com/instant/among-us-role-reveal-sound-34956/embed/" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/v3Sj7T9D1_Q" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
+
